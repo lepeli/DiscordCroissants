@@ -5,8 +5,8 @@ import random
 import os
 from PIL import Image
 
-description = '''Croissants!'''
-bot = commands.Bot(command_prefix='Croissant! ', description=description)
+
+bot = commands.Bot(command_prefix='Croissant! ', description="Croissants!")
 
 Croissantimg = ['https://alexa.moe/2nDjV.png', 'https://alexa.moe/rTahn.png', 'https://alexa.moe/oV4Os.png', 'https://alexa.moe/fEPJB.png', 'https://alexa.moe/KaHyj.png', 'https://alexa.moe/yXpYN.png', 'https://alexa.moe/RJgk3.png']
 
@@ -24,9 +24,8 @@ async def aretheyhot(ctx):
 @bot.command()
 async def croissant(ctx):
     """Croissant!!"""
-    f = random.choice(Croissantimg)
     embed = discord.Embed(description=("**Croissants!**"))
-    embed.set_image(url=f)
+    embed.set_image(url=random.choice(Croissantimg))
     await ctx.send(embed=embed)
 
 bot.run('YOUR TOKEN GOES HERE')
