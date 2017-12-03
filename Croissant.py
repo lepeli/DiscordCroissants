@@ -12,12 +12,9 @@ Croissantimg = ['https://alexa.moe/2nDjV.png', 'https://alexa.moe/rTahn.png', 'h
 
 @bot.event
 async def on_ready():
-    print('------')
-    print('Logged in as')
     print(bot.user.name)
     print(bot.user.id)
     print(len(bot.guilds))
-    print('------')
 
 @bot.command()
 async def aretheyhot(ctx):
