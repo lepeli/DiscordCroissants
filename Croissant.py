@@ -1,10 +1,15 @@
+import json
 from random import choice
 
 import discord
 from discord.ext import commands
 from resources import images
 
-bot = commands.Bot(command_prefix=['🥐', 'croissant! ', 'kwah-saunh '], description="Croissants!")
+with open("config.json") as c:
+    data = json.load(c)
+
+
+bot = commands.Bot(command_prefix=data['prefixes'], description="Croissants!")
 
 
 @bot.event
@@ -26,4 +31,4 @@ async def croissant(ctx):
     await ctx.send(embed=embed)
 
 
-bot.run('croissant')
+bot.run(data['token'])
