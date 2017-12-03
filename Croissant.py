@@ -26,4 +26,4 @@ async def croissant(ctx):
     await ctx.send(embed=embed)
 
 
-bot.run('MjI2MzkxOTQ3NzIyMzU4Nzk0.DQWhgw.eK35cfeHTm92oqQSf7UNVCqhUtE')
+bot.run('croissant')
