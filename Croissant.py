@@ -20,13 +20,17 @@ async def on_ready():
 @bot.command()
 async def aretheyhot(ctx):
     """Checks if the Croissants are hot!"""
-    await ctx.send('Yes the Croissants are hot!!')
+    await ctx.send('Yes the Croissants are hot!! 😍😍😍😍')
 
+@bot.command()
+async def sontilsbons(ctx):
+    """Savoir si les croissants sont délicieux !!"""
+    await ctx.send('Oui ils sont putain de délicieux !!! 😍😍😍😍')
 
 @bot.command()
 async def croissant(ctx):
     """Croissant!!"""
-    embed = discord.Embed(description=("**Croissants!**"))
+    embed = discord.Embed(description=("**Croissants!** 😍😍"))
     embed.set_image(url=choice(images.croissants))
     await ctx.send(embed=embed)
 
